@@ -1,14 +1,30 @@
+# Gradle / Android build files
 .gradle/
 build/
 */build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local machine files
 local.properties
 *.iml
 .idea/
 .DS_Store
 
-# Signing / secrets
+# Secrets / signing / environment
+.env
+.env.*
+secrets.properties
+keystore.properties
 *.jks
 *.keystore
-keystore.properties
-secrets.properties
-.env
+*.pem
+*.p12
+*.key
+
+# Logs
+*.log
+
+# OS junk
+Thumbs.db
